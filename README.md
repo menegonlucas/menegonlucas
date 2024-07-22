@@ -1,6 +1,6 @@
-<!-- GIF -->
+<!-- Image -->
 <p align="center">
-  <img src="https://media.giphy.com/media/12bjQ7uASAaCKk/giphy.gif?cid=ecf05e47zvcpqyrfpw6ag0xnhwpdoh9sr98k1nu16popb4st&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Excited GIF" style="max-width: 400px; border-radius: 10px;">
+  <img src="https://a.ltrbxd.com/resized/sm/upload/zy/oj/ev/c0/fabelmans-0-1920-0-0.jpg?k=d881322b32" alt="Fabelmans Image" style="max-width: 100%; border-radius: 10px;">
 </p>
 
 <!-- Name -->
