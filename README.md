@@ -1,6 +1,6 @@
 <!-- GIF -->
 <p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExeWloczJmMWI0ZGJocGR1dW01dDZoNHBlMm94dzFyZmw1eno0bGZmdiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/QpVUMRUJGokfqXyfa1/giphy.gif" alt="Excited GIF" style="max-width: 400px; border-radius: 10px;">
+ <img src="https://media.giphy.com/media/12bjQ7uASAaCKk/giphy.gif?cid=ecf05e47zvcpqyrfpw6ag0xnhwpdoh9sr98k1nu16popb4st&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Excited GIF" style="max-width: 400px; border-radius: 10px;">
 </p>
 
 ## My name is Lucas Menegon and I'm 17 years old
