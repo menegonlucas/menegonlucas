@@ -1,6 +1,6 @@
 <!-- Image -->
 <p align="center">
-  <img src="[https://a.ltrbxd.com/resized/sm/upload/zy/oj/ev/c0/fabelmans-0-1920-0-0.jpg?k=d881322b32](https://m.media-amazon.com/images/M/MV5BMjEyMzM3NjM0NF5BMl5BanBnXkFtZTgwMDQ1NzMzMzI@._V1_.jpg)" alt="Fabelmans Image" style="max-width: 100%; border-radius: 10px;">
+  <img src="https://a.ltrbxd.com/resized/sm/upload/zy/oj/ev/c0/fabelmans-0-1920-0-0.jpg?k=d881322b32](https://m.media-amazon.com/images/M/MV5BMjEyMzM3NjM0NF5BMl5BanBnXkFtZTgwMDQ1NzMzMzI@._V1_.jpg)" alt="Fabelmans Image" style="max-width: 100%; border-radius: 10px;">
 </p>
 
 <!-- Name -->
