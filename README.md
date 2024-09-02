@@ -1,6 +1,6 @@
 <!-- Image -->
 <p align="center">
-  <img src="(https://m.media-amazon.com/images/S/pv-target-images/1cd9df3eab947f5df1a10db1cf3d00e06abf70ee5299b38d0ec68bd724a92673.jpg)" alt="Descrição da Imagem" style="max-width: 300px; border: 2px solid #ffffff; border-radius: 10px; margin: 10px;">
+  <img src="https://m.media-amazon.com/images/S/pv-target-images/1cd9df3eab947f5df1a10db1cf3d00e06abf70ee5299b38d0ec68bd724a92673.jpg" alt="Descrição da Imagem" style="max-width: 300px; border: 2px solid #ffffff; border-radius: 10px; margin: 10px;">
 </p>
 
 <!-- Name -->
