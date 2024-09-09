@@ -23,9 +23,9 @@
 <!-- Buttons for Letterboxd and Spotify -->
 <p align="center">
   <a href="https://boxd.it/453Gr" target="_blank">
-    <img src="https://img.shields.io/badge/Letterboxd-FF6F61?style=for-the-badge&logo=letterboxd&logoColor=white" alt="Letterboxd">
+    <img src="https://img.shields.io/badge/Letterboxd-FF5733?style=for-the-badge&logo=letterboxd&logoColor=white" alt="Letterboxd">
   </a>
   <a href="https://open.spotify.com/user/gahenri21?si=df3d38835dcd4121" target="_blank">
-    <img src="https://img.shields.io/badge/Spotify-1DB954?style=for-the-badge&logo=spotify&logoColor=white" alt="Spotify">
+    <img src="https://img.shields.io/badge/Spotify-009688?style=for-the-badge&logo=spotify&logoColor=white" alt="Spotify">
   </a>
 </p>
