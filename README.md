@@ -20,9 +20,7 @@
 </p>
 
 
-  <!-- GitHub Streaks -->
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=menegonlucas&theme=dark" alt="GitHub Streaks" style="max-width: 300px; border: 2px solid #ffffff; border-radius: 10px; margin: 10px;">
-</p>
+
 
 <!-- Buttons for Letterboxd and Spotify -->
 <p align="center">
