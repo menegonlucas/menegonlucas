@@ -1,6 +1,6 @@
 <!-- Image -->
 <p align="center">
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh4BhbhcrlUrCeXmyGoVN0kJQVrVp44UX35Q&s" alt="Descrição da Imagem" style="max-width: 300px; border: 2px solid #ffffff; border-radius: 10px; margin: 10px;">
+  <img src="https://static01.nyt.com/images/2020/10/05/arts/05social-network01/05social-network01-superJumbo-v3.jpg" alt="Descrição da Imagem" style="max-width: 300px; border: 2px solid #ffffff; border-radius: 10px; margin: 10px;">
 </p>
 
 <!-- Name -->
