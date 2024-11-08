@@ -1,6 +1,6 @@
 <!-- Image -->
 <p align="center">
-  <img src="https://cinemaeargumento.com/wp-content/uploads/2016/06/mommymovie.png?w=584" alt="Descrição da Imagem" style="max-width: 300px; border: 2px solid #ffffff; border-radius: 10px; margin: 10px;">
+  <img src="[https://cinemaeargumento.com/wp-content/uploads/2016/06/mommymovie.png?w=584](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh4BhbhcrlUrCeXmyGoVN0kJQVrVp44UX35Q&s)" alt="Descrição da Imagem" style="max-width: 300px; border: 2px solid #ffffff; border-radius: 10px; margin: 10px;">
 </p>
 
 <!-- Name -->
