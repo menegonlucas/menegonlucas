@@ -5,7 +5,7 @@
 
 <!-- Name -->
 <p align="center">
-  <strong style="font-size: 24px;">Hi! It is nice to meeting you here. My name is Lucas Menegon and I'm 17 years old</strong>
+  <strong style="font-size: 24px;">Hi! It is nice to meet you here. My name is Lucas Menegon and I am 17 years old</strong>
 </p>
 
 <p align="center">
