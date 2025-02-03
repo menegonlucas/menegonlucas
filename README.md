@@ -1,11 +1,7 @@
-<!-- Image -->
-<p align="center">
-  <img src="https://static01.nyt.com/images/2020/10/05/arts/05social-network01/05social-network01-superJumbo-v3.jpg" alt="Descrição da Imagem" style="max-width: 300px; border: 2px solid #ffffff; border-radius: 10px; margin: 10px;">
-</p>
 
 <!-- Name -->
 <p align="center">
-  <strong style="font-size: 24px;">Hi! It is nice to meet you here. My name is Lucas Menegon and I am 17 years old</strong>
+  <strong style="font-size: 24px;">Hi! </strong>
 </p>
 
 <p align="center">
