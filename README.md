@@ -1,16 +1,27 @@
-## Hi there 👋
 
-<!--
-**menegonlucas/menegonlucas** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!-- Name -->
+<p align="center">
+  <strong style="font-size: 24px;">Hi! </strong>
+</p>
 
-Here are some ideas to get you started:
+<p align="center">
+  <!-- GitHub Stats -->
+  <img src="https://github-readme-stats.vercel.app/api?username=menegonlucas&theme=tokyonight&show_icons=true" alt="GitHub Stats" style="max-width: 300px; border: 2px solid #000000; border-radius: 10px; margin: 10px;">
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+  <!-- Top Languages -->
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=menegonlucas&theme=tokyonight" alt="Top Languages" style="max-width: 300px; border: 2px solid #000000; border-radius: 10px; margin: 10px;">
+
+  <!-- GitHub Streaks -->
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=menegonlucas&theme=tokyonight" alt="GitHub Streaks" style="max-width: 300px; border: 2px solid #000000; border-radius: 10px; margin: 10px;">
+</p>
+
+<!-- Buttons for Letterboxd and Spotify -->
+<p align="center">
+  <a href="https://boxd.it/453Gr" target="_blank">
+    <img src="https://img.shields.io/badge/Letterboxd-1F305F?style=for-the-badge&logo=letterboxd&logoColor=white" alt="Letterboxd">
+  </a>
+
+</p>
+
+# Projetos Recentes 📎
+🏷 https://github.com/menegonlucas/desafio-cards.git
