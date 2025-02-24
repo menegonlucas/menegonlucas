@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(10, 17, 40);
+    background: linear-gradient(69deg, rgba(10, 17, 40, 1) 0%, rgba(0, 31, 84, 1) 19%, rgba(3, 64, 120, 1) 43%);
+}
+
+header {
+    background: #051923;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-right: 20px;
+    transition: border-color 0.3s;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 5px #ffffff);
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    text-align: right;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 15px;
+    text-decoration: none;
+    /* Corrigido para 'none' */
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #edf6f9;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #03045e;
+    color: black;
+}
+
+h2 {
+    color: #000000;
+}
+
+.projetos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.botao {
+    background-color: #03045e;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    /* Adicionado efeito de transformação */
+}
+
+.botao:hover {
+    background-color: #d4d5d9;
+    /* Cor de fundo ao passar o mouse */
+    transform: scale(1.05);
+    /* Efeito de aumento ao passar o mouse */
+}
+
+.linguagens {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.linguagem {
+    text-align: center;
+    margin: 10px;
+}
+
+.linguagem img {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8 51%, #757F9A 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-position 0.5s, color 0.5s;
+    /* Adicionado efeito de transição para a cor */
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #3d3b3b;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* Muda a posição do gradiente ao passar o mouse */
+    color: #fff;
+    /* Mantém a cor do texto ao passar o mouse */
+    text-decoration: none;
+}
+
+#github a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+}
+
+#github a img:hover {
+    transform: scale(1.2);
+}
