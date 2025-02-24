@@ -22,6 +22,3 @@
   </a>
 
 </p>
-
-# Projetos Recentes 📎
-🏷 https://github.com/menegonlucas/desafio-cards.git
