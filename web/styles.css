@@ -30,7 +30,6 @@ header img {
     border: 2px solid white;
     margin-right: 20px;
     transition: border-color 0.3s;
-    cursor: pointer;
     filter: drop-shadow(0px 0px 5px #ffffff);
 }
 
@@ -115,7 +114,6 @@ h2 {
     text-align: center;
     text-transform: uppercase;
     transition: background-position 0.5s, color 0.5s;
-    /* Adicionado efeito de transição para a cor */
     background-size: 200% auto;
     color: white;
     box-shadow: 0 0 20px #3d3b3b;
@@ -125,9 +123,7 @@ h2 {
 
 .btn-grad:hover {
     background-position: right center;
-    /* Muda a posição do gradiente ao passar o mouse */
     color: #fff;
-    /* Mantém a cor do texto ao passar o mouse */
     text-decoration: none;
 }
 
