@@ -4,17 +4,19 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    background: rgb(10, 17, 40);
-    background: linear-gradient(69deg, rgba(10, 17, 40, 1) 0%, rgba(0, 31, 84, 1) 19%, rgba(3, 64, 120, 1) 43%);
+    background-image: url(https://images.alphacoders.com/237/237343.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #ffffff;
 }
 
 header {
-    background: #051923;
+    background: #0099CC;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .header-left {
@@ -46,16 +48,15 @@ nav a {
     color: #ffffff;
     margin: 0 15px;
     text-decoration: none;
-    /* Corrigido para 'none' */
 }
 
 section {
     padding: 20px;
     margin: 20px;
-    background: #edf6f9;
+    background: #ffffff;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px #03045e;
-    color: black;
+    box-shadow: 0px 0px 5px #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 h2 {
@@ -77,14 +78,11 @@ h2 {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
-    /* Adicionado efeito de transformação */
 }
 
 .botao:hover {
     background-color: #d4d5d9;
-    /* Cor de fundo ao passar o mouse */
     transform: scale(1.05);
-    /* Efeito de aumento ao passar o mouse */
 }
 
 .linguagens {
@@ -105,20 +103,19 @@ h2 {
     border-radius: 5px;
 }
 
-
-
 .btn-grad {
-    background-image: linear-gradient(to right, #757F9A 0%, #D7DDE8 51%, #757F9A 100%);
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
     margin: 10px;
     padding: 15px 45px;
     text-align: center;
-    text-transform: uppercase;
-    transition: background-position 0.5s, color 0.5s;
+    transition: 0.5s;
     background-size: 200% auto;
     color: white;
-    box-shadow: 0 0 20px #3d3b3b;
+    box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     display: block;
+    border: none;
+    text-decoration: none;
 }
 
 .btn-grad:hover {
