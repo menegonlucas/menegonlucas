@@ -14,7 +14,8 @@ header {
     background: none;
     padding: 10px 20px;
     display: flex;
-    justify-content: center; /* Centralizar os botões */
+    justify-content: center;
+    /* Centralizar os botões */
     align-items: center;
 }
 
@@ -35,19 +36,21 @@ h1 {
 
 nav {
     display: flex;
-    justify-content: center; /* Centralizar os botões */
+    justify-content: center;
+    /* Centralizar os botões */
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px; /* Espaçamento entre os botões */
+    gap: 10px;
+    /* Espaçamento entre os botões */
 }
 
 nav a {
     padding: 15px 25px;
     border: unset;
     border-radius: 15px;
-    color: #212121;
+    color: #FAB124;
     z-index: 1;
-    background: #e8e8e8;
+    background: #2181B5;
     position: relative;
     font-weight: 1000;
     font-size: 17px;
@@ -66,7 +69,7 @@ nav a::before {
     height: 100%;
     width: 0;
     border-radius: 15px;
-    background-color: #212121;
+    background-color: #F9007E;
     z-index: -1;
     box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
     transition: all 250ms;
@@ -83,7 +86,8 @@ nav a:hover::before {
 section {
     padding: 20px;
     margin: 20px;
-    background: #ffffff; /* Fundo branco */
+    background: #ffffff;
+    /* Fundo branco */
     border-radius: 5px;
     color: rgb(0, 0, 0);
     position: relative;
@@ -225,7 +229,8 @@ h2 {
         padding: 10px 30px;
     }
 }
-/* From Uiverse.io by faxriddin20 */ 
+
+/* From Uiverse.io by faxriddin20 */
 .card {
     width: fit-content;
     height: fit-content;
@@ -236,10 +241,10 @@ h2 {
     padding: 25px 25px;
     gap: 20px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
-  }
-  
-  /* for all social containers*/
-  .socialContainer {
+}
+
+/* for all social containers*/
+.socialContainer {
     width: 52px;
     height: 52px;
     border-radius: 5px;
@@ -249,54 +254,57 @@ h2 {
     justify-content: center;
     overflow: hidden;
     transition-duration: 0.3s;
-  }
-  /* instagram*/
-  .containerOne:hover {
+}
+
+/* instagram*/
+.containerOne:hover {
     background-color: #d62976;
     transition-duration: 0.3s;
-  }
-  /* twitter*/
-  .containerTwo:hover {
+}
+
+/* twitter*/
+.containerTwo:hover {
     background-color: #00acee;
     transition-duration: 0.3s;
-  }
-  /* linkdin*/
-  .containerThree:hover {
+}
+
+/* linkdin*/
+.containerThree:hover {
     background-color: #0072b1;
     transition-duration: 0.3s;
-  }
-  /* Whatsapp*/
-  .containerFour:hover {
+}
+
+/* Whatsapp*/
+.containerFour:hover {
     background-color: green;
     transition-duration: 0.3s;
-  }
-  
-  .socialContainer:active {
+}
+
+.socialContainer:active {
     transform: scale(0.9);
     transition-duration: 0.3s;
-  }
-  
-  .socialSvg {
+}
+
+.socialSvg {
     width: 17px;
-  }
-  
-  .socialSvg path {
+}
+
+.socialSvg path {
     fill: rgb(255, 255, 255);
-  }
-  
-  .socialContainer:hover .socialSvg {
+}
+
+.socialContainer:hover .socialSvg {
     animation: slide-in-top 0.3s both;
-  }
-  
-  @keyframes slide-in-top {
+}
+
+@keyframes slide-in-top {
     0% {
-      transform: translateY(-50px);
-      opacity: 0;
+        transform: translateY(-50px);
+        opacity: 0;
     }
-  
+
     100% {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
-  
+}
