@@ -3,7 +3,7 @@
   <strong style="font-size: 24px;">Hi! </strong>
 </p>
 
-![fav film](https://exemplo.com/minha-imagem.jpg](https://i0.wp.com/cinegrandiose.com/wp-content/uploads/Stand-By-Me-2.png?fit=960%2C540&ssl=1)
+![fav film](https://i0.wp.com/cinegrandiose.com/wp-content/uploads/Stand-By-Me-2.png?fit=960%2C540&ssl=1)
 
 <p align="center">
 
