@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav>
-            <div class="logo">Lucas Menegon</div>
+            <div class="logo">@menegonlucas | github</div>
             <ul class="nav-links">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
@@ -81,5 +81,26 @@
         <p>&copy; 2025 Lucas Menegon. Todos os direitos reservados.</p>
     </footer>
 </body>
+<script>
+    document.addEventListener('mousemove', (e) => {
+        // Cria uma estrelinha
+        const star = document.createElement('div');
+        star.classList.add('star');
+        star.style.top = `${e.clientY}px`;
+        star.style.left = `${e.clientX}px`;
+
+        // Define uma cor aleatória para a estrelinha
+        const hue = Math.random();
+        star.style.setProperty('--hue', hue);
+
+        // Adiciona a estrelinha ao corpo do documento
+        document.body.appendChild(star);
+
+        // Remove a estrelinha após a animação
+        setTimeout(() => {
+            star.remove();
+        }, 1000);
+    });
+</script>
 
 </html>
