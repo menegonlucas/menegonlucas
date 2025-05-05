@@ -1,31 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
 
-
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Cores em tons de azul */
 :root {
-    --primary-color: #0d1b2a;
-    --secondary-color: #bde0fe;
-    --background-color: #FAF9F6;
-    --text-color: #0D1B2A;
-    --white: #ffffff;
+    --primary-color: #01306F;
+    --secondary-color: #7CAFE4;
+    --background-color: #EFEFFF;
+    --text-color: #171616;
+    --white: #EFEFFF;
 }
 
-/* Tipografia */
 body {
     font-family: 'Cal Sans', sans-serif;
-    background-color: var(--background-color);
+    background: #EFEFFF;
     color: var(--text-color);
     line-height: 1.6;
+    cursor: none;
 }
 
-/* Header */
 header {
     background: var(--primary-color);
     padding: 20px 50px;
@@ -53,14 +49,19 @@ nav .logo {
     color: var(--white);
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
+    padding: 5px 5px;
+    border-radius: 25px;
+    transition: background 0.3s, box-shadow 0.3s, color 0.3s;
 }
 
 .nav-links a:hover {
-    color: var(--secondary-color);
+    background: #EFEFFF;
+    color: var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1),
+        0 0 15px var(--secondary-color),
+        0 0 25px var(--primary-color);
 }
 
-/* Seções */
 .section {
     padding: 80px 50px;
     text-align: center;
@@ -69,10 +70,9 @@ nav .logo {
 h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
-/* Home */
 .home-content {
     margin-top: 50px;
 }
@@ -99,10 +99,9 @@ h2 {
 }
 
 .btn:hover {
-    background: var(--primary-color);
+    background: #5EC8D4;
 }
 
-/* Projetos */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -117,7 +116,6 @@ h2 {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Habilidades */
 .skills-list {
     list-style: none;
     display: flex;
@@ -134,7 +132,6 @@ h2 {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Contato */
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -151,7 +148,6 @@ h2 {
     border-radius: 10px;
 }
 
-/* Footer */
 footer {
     background: var(--primary-color);
     color: var(--white);
@@ -159,7 +155,6 @@ footer {
     padding: 20px 0;
 }
 
-/* Estilo para a seção Projetos */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -199,14 +194,13 @@ footer {
     color: var(--text-color);
 }
 
-/* Estilo para as estrelinhas */
 .star {
     position: fixed;
-    width: 10px;
-    height: 10px;
+    width: 8px; /* Tamanho menor */
+    height: 8px;
     background-color: transparent;
     pointer-events: none;
-    animation: fade-out 1s ease-out forwards;
+    animation: fade-out 1.5s ease-out forwards; /* Animação mais longa */
     z-index: 1000;
 }
 
@@ -215,21 +209,23 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 20px;
-    height: 20px;
-    background-color: hsl(calc(360 * var(--hue)), 100%, 70%);
-    clip-path: polygon(50% 0%,
-            61% 35%,
-            98% 35%,
-            68% 57%,
-            79% 91%,
-            50% 70%,
-            21% 91%,
-            32% 57%,
-            2% 35%,
-            39% 35%);
+    width: 16px; /* Tamanho menor */
+    height: 16px;
+    background-color: hsl(calc(200 + 60 * var(--hue)), 100%, 70%);
+    clip-path: polygon(
+        50% 0%, 
+        61% 35%, 
+        98% 35%, 
+        68% 57%, 
+        79% 91%, 
+        50% 70%, 
+        21% 91%, 
+        32% 57%, 
+        2% 35%, 
+        39% 35%
+    );
     transform: translate(-50%, -50%);
-    box-shadow: 0 0 10px hsl(calc(360 * var(--hue)), 100%, 70%);
+    box-shadow: 0 0 10px hsl(calc(200 + 60 * var(--hue)), 100%, 70%);
 }
 
 @keyframes fade-out {
@@ -239,23 +235,7 @@ footer {
     }
 }
 
-/* Animação para desaparecer */
-@keyframes fade-out {
-    0% {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    100% {
-        opacity: 0;
-        transform: scale(0.5);
-    }
-}
-
-/* Ajustes para telas menores (celulares) */
 @media (max-width: 768px) {
-
-    /* Ajustar o layout do header */
     .nav-links {
         display: flex;
         flex-direction: column;
@@ -267,7 +247,6 @@ footer {
         margin: 0;
     }
 
-    /* Centralizar o conteúdo da seção "Home" */
     .home-content {
         text-align: center;
         padding: 20px;
@@ -281,14 +260,11 @@ footer {
         font-size: 16px;
     }
 
-    /* Ajustar a grade de projetos */
     .projects-grid {
         grid-template-columns: 1fr;
-        /* Uma coluna para celulares */
         gap: 15px;
     }
 
-    /* Ajustar o tamanho das habilidades */
     .skills-list {
         flex-direction: column;
         gap: 10px;
@@ -299,7 +275,6 @@ footer {
         padding: 8px 15px;
     }
 
-    /* Ajustar o rodapé */
     footer {
         font-size: 14px;
         padding: 15px 0;
