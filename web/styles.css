@@ -196,11 +196,13 @@ footer {
 
 .star {
     position: fixed;
-    width: 8px; /* Tamanho menor */
+    width: 8px;
+    /* Tamanho menor */
     height: 8px;
     background-color: transparent;
     pointer-events: none;
-    animation: fade-out 1.5s ease-out forwards; /* Animação mais longa */
+    animation: fade-out 1.5s ease-out forwards;
+    /* Animação mais longa */
     z-index: 1000;
 }
 
@@ -209,21 +211,20 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 16px; /* Tamanho menor */
+    width: 16px;
+    /* Tamanho menor */
     height: 16px;
     background-color: hsl(calc(200 + 60 * var(--hue)), 100%, 70%);
-    clip-path: polygon(
-        50% 0%, 
-        61% 35%, 
-        98% 35%, 
-        68% 57%, 
-        79% 91%, 
-        50% 70%, 
-        21% 91%, 
-        32% 57%, 
-        2% 35%, 
-        39% 35%
-    );
+    clip-path: polygon(50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%);
     transform: translate(-50%, -50%);
     box-shadow: 0 0 10px hsl(calc(200 + 60 * var(--hue)), 100%, 70%);
 }
@@ -279,4 +280,180 @@ footer {
         font-size: 14px;
         padding: 15px 0;
     }
+}
+
+.github-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    justify-items: center;
+}
+
+.github-card {
+    position: relative;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.github-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+.github-card img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s;
+}
+
+.github-card:hover img {
+    opacity: 0.9;
+}
+
+.github-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+    transform: rotate(45deg);
+    z-index: 0;
+    animation: rotate-gradient 6s linear infinite;
+}
+
+@keyframes rotate-gradient {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#featured-project {
+    margin-bottom: 5px;
+    /* Reduz a margem inferior */
+}
+
+.featured-project-card {
+    background: var(--white);
+    padding: 5px;
+    /* Reduz ainda mais o padding */
+    border-radius: 25px;
+    /* Reduz o arredondamento */
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1),
+        0 0 8px var(--secondary-color),
+        0 0 12px var(--primary-color);
+    /* Reduz a intensidade da sombra */
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.featured-project-card h3 {
+    font-size: 20px;
+    /* Reduz o tamanho do título */
+    margin-bottom: 3px;
+    /* Reduz o espaçamento inferior */
+    color: var(--primary-color);
+}
+
+.featured-project-card p {
+    font-size: 14px;
+    /* Reduz o tamanho do texto */
+    line-height: 1.4;
+    /* Ajusta o espaçamento entre linhas */
+    color: var(--text-color);
+    margin-bottom: 5px;
+    /* Reduz o espaçamento inferior */
+    margin-top: 5px;
+}
+
+.featured-project-card p span {
+    font-weight: bold;
+    color: var(--secondary-color);
+    /* Destaque para palavras importantes */
+}
+
+.featured-project-card .btn {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 8px 15px;
+    /* Reduz o tamanho do botão */
+    border: none;
+    border-radius: 15px;
+    /* Reduz o arredondamento do botão */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    /* Reduz o tamanho da fonte do botão */
+    transition: background 0.3s, transform 0.3s;
+}
+
+.featured-project-card .btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+}
+
+.featured-project-card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1),
+        0 0 10px var(--secondary-color),
+        0 0 15px var(--primary-color);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+    /* Alinha o texto à esquerda */
+    line-height: 1.6;
+    /* Melhora o espaçamento entre linhas */
+}
+
+.featured-project-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-weight: bold;
+    text-align: center;
+    /* Centraliza o título */
+}
+
+.featured-project-card p {
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-align: justify;
+    /* Justifica o texto para melhor legibilidade */
+}
+
+.featured-project-card p span {
+    font-weight: bold;
+    color: var(--secondary-color);
+    /* Destaque para palavras importantes */
+}
+
+.featured-project-card .btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.3s;
+    text-align: center;
+}
+
+.featured-project-card .btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
 }

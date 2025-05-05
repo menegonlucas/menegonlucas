@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav>
-            <div class="logo">@menegonlucas | github</div>
+            <div class="logo">@menegonlucas | GitHub</div>
             <ul class="nav-links">
                 <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
@@ -33,10 +33,33 @@
 
     <section id="about" class="section">
         <h2>Quem sou eu?</h2>
-        <p>"Iniciei o curso Técnico em Desenvolvimento de Sistemas em 2024 e, desde o primeiro contato com o Front-end,
+        <p>Iniciei o curso Técnico em Desenvolvimento de Sistemas em 2024 e, desde o primeiro contato com o Front-end,
             descobri minha paixão pelo desenvolvimento de sites e seus elementos visuais. Com ajuda de sites, incluindo
             Inteligências Artificiais, tenho aprimorado minhas habilidades, criando projetos
-            mais bonitos e agradáveis e funcionais."</p>
+            mais bonitos e agradáveis e funcionais.</p>
+    </section>
+
+    <section id="featured-project" class="section">
+        <h2>| Destaque |</h2>
+        <div class="featured-project-card">
+            <h3>Que tal gerenciar suas leituras? - Projeto final TCC</h3>
+            <p>
+                <span>Palavraria</span> é uma plataforma minimalista para organizar os livros que você já leu e
+                os que deseja ler. Nosso foco é oferecer uma experiência simples, sem distrações, para você
+                acompanhar suas leituras de forma fácil e intuitiva.
+            </p>
+            <p>
+                Diferente de outros sites/apps, valorizamos a <span>praticidade</span>: sem excesso de
+                informações, apenas o essencial para gerenciar sua biblioteca de um jeito rápido e interessante.
+            </p>
+            <p>
+                Cadastre seus livros manualmente e acompanhe seu progresso com status personalizados:
+                <span>lendo</span>, <span>lido</span>, <span>quero ler</span>, <span>abandonado</span> ou
+                <span>relendo</span>. Atualize a página em que está, e uma barra de progresso será calculada
+                automaticamente.
+            </p>
+            <a href="https://github.com/menegonlucas/projeto_tcc" target="_blank" class="btn">Ver no GitHub</a>
+        </div>
     </section>
 
     <section id="projects" class="section">
@@ -79,31 +102,40 @@
             <li>Linguagem C</li>
         </ul>
     </section>
-    <div class="custom-cursor"></div>
+
+    <section id="github-stats" class="section">
+        <h2>Estatísticas do GitHub</h2>
+        <div class="github-stats-grid">
+            <img src="https://github-readme-stats.vercel.app/api?username=menegonlucas&theme=algolia&show_icons=true"
+                alt="GitHub Stats">
+            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=menegonlucas&theme=algolia"
+                alt="Top Languages">
+            <img src="https://github-readme-streak-stats.herokuapp.com/?user=menegonlucas&theme=algolia"
+                alt="GitHub Streaks">
+        </div>
+    </section>
+
     <footer>
         <p>&copy; 2025 Lucas Menegon</p>
     </footer>
 </body>
+
 <script>
     document.addEventListener('mousemove', (e) => {
-        // Cria estrelas apenas em 50% dos movimentos do mouse
         if (Math.random() > 0.5) {
             const star = document.createElement('div');
             star.classList.add('star');
 
-            // Define a posição da estrela com um pequeno deslocamento aleatório
-            const offsetX = (Math.random() - 0.5) * 50; // Deslocamento horizontal aleatório
-            const offsetY = (Math.random() - 0.5) * 50; // Deslocamento vertical aleatório
+            const offsetX = (Math.random() - 0.5) * 50;
+            const offsetY = (Math.random() - 0.5) * 50;
             star.style.top = `${e.clientY + offsetY}px`;
             star.style.left = `${e.clientX + offsetX}px`;
 
-            // Define um tom aleatório de azul
             const hue = Math.random();
             star.style.setProperty('--hue', hue);
 
             document.body.appendChild(star);
 
-            // Remove a estrela após 1 segundo
             setTimeout(() => {
                 star.remove();
             }, 1000);
