@@ -4,145 +4,366 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos de Lucas</title>
+    <meta name="description" content="Portfólio profissional de Lucas Menegon, Desenvolvedor Front-End">
+    <meta name="keywords" content="desenvolvedor front-end, portfolio, HTML, CSS, JavaScript">
+    <title>Lucas Menegon | Desenvolvedor Front-End</title>
     <link rel="stylesheet" href="./web/styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo">@menegonlucas | GitHub</div>
+            <div class="logo">Lucas Menegon <span class="highlight">Dev</span></div>
+            <button class="mobile-menu-toggle" aria-label="Menu mobile">
+                <i class="fas fa-bars"></i>
+            </button>
             <ul class="nav-links">
-                <li><a href="#home">Início</a></li>
-                <li><a href="#about">Sobre</a></li>
-                <li><a href="#projects">Trabalhos</a></li>
-                <li><a href="#skills">As ferramentas</a></li>
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
             </ul>
         </nav>
     </header>
-    <section id="home" class="section">
-        <div class="home-content">
-            <h1>Olá, seja bem-vindo(a). Meu nome é <span>Lucas Menegon</span></h1>
-            <p>Desenvolvedor Front-End</p>
+
+    <main>
+        <section id="home" class="section hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Transformando ideias em <span class="highlight">experiências digitais</span></h1>
+                <p class="hero-subtitle">Desenvolvedor Front-End especializado em criar interfaces intuitivas e
+                    responsivas</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Ver projetos</a>
+                    <a href="#contact" class="btn btn-secondary">Contato</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="section-container">
+                <h2 class="section-title">Sobre mim</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Iniciei o curso Técnico em Desenvolvimento de Sistemas em 2024 e, desde o primeiro contato
+                            com o Front-end, descobri minha paixão pelo desenvolvimento de sites e seus elementos
+                            visuais.</p>
+                        <p>Com dedicação constante e utilizando diversas ferramentas, incluindo Inteligências
+                            Artificiais, tenho aprimorado minhas habilidades para criar projetos mais bonitos,
+                            agradáveis e funcionais.</p>
+                        <p>Meu objetivo é desenvolver soluções que combinem estética e usabilidade, garantindo a melhor
+                            experiência para o usuário final.</p>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-project" class="section featured-section">
+            <div class="section-container">
+                <h2 class="section-title">Projeto em destaque</h2>
+                <div class="featured-project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Palavraria - Gerenciador de leituras</h3>
+                        <p class="project-description">Plataforma minimalista para organizar os livros que você já leu e
+                            os que deseja ler. Nosso foco é oferecer uma experiência simples, sem distrações, para você
+                            acompanhar suas leituras de forma fácil e intuitiva.</p>
+                        <ul class="project-features">
+                            <li><i class="fas fa-check-circle"></i> Acompanhamento de progresso com barra automática
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Status personalizados (lendo, lido, quero ler, etc)
+                            </li>
+                            <li><i class="fas fa-check-circle"></i> Interface limpa e focada na experiência do usuário
+                            </li>
+                        </ul>
+                        <div class="project-techs">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>LocalStorage</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/menegonlucas/projeto_tcc" target="_blank"
+                                class="btn btn-primary">
+                                <i class="fab fa-github"></i> Ver código
+                            </a>
+                            <a href="#" class="btn btn-secondary">
+                                <i class="fas fa-external-link-alt"></i> Ver demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <div class="section-container">
+                <h2 class="section-title">Meus projetos</h2>
+                <p class="section-subtitle">Alguns dos trabalhos que desenvolvi para praticar e aprimorar minhas
+                    habilidades</p>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <div class="folder-icon">
+                                <i class="fas fa-folder"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/menegonlucas/desafio-cards" target="_blank"
+                                    aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://menegonlucas.github.io/desafio-cards/" target="_blank"
+                                    aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Desafio Cards e Listas</h3>
+                        <p class="project-description">Trabalhando com exibição em Cards e Listas, com foco em
+                            responsividade para dispositivos móveis.</p>
+                        <div class="project-techs">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <div class="folder-icon">
+                                <i class="fas fa-folder"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/menegonlucas/aula4_pfe" target="_blank" aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://menegonlucas.github.io/aula4_pfe/" target="_blank"
+                                    aria-label="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Web Storage</h3>
+                        <p class="project-description">Implementação de funcionalidades utilizando Web Storage API para
+                            persistência de dados no navegador.</p>
+                        <div class="project-techs">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-card-header">
+                            <div class="folder-icon">
+                                <i class="fas fa-folder"></i>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/menegonlucas/pfe1-lanchonete-delivery-2025" target="_blank"
+                                    aria-label="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Sistema Delivery</h3>
+                        <p class="project-description">Sistema de lanchonete delivery com LocalStorage, tabelas
+                            dinâmicas e responsividade.</p>
+                        <div class="project-techs">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more-projects">
+                    <a href="https://github.com/menegonlucas?tab=repositories" target="_blank" class="btn btn-outline">
+                        Ver todos os projetos <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <div class="section-container">
+                <h2 class="section-title">Habilidades & Tecnologias</h2>
+                <p class="section-subtitle">Ferramentas e tecnologias que utilizo no meu dia a dia</p>
+
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Front-End</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-css3-alt"></i>
+                                </div>
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-mobile-alt"></i>
+                                </div>
+                                <span>Responsividade</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="skill-category-title">Ferramentas</h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fas fa-terminal"></i>
+                                </div>
+                                <span>Terminal</span>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon">
+                                    <i class="fab fa-figma"></i>
+                                </div>
+                                <span>Figma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="github-stats" class="section stats-section">
+            <div class="section-container">
+                <h2 class="section-title">Atividade no GitHub</h2>
+                <div class="stats-grid">
+                    <div class="stats-card">
+                        <img src="https://github-readme-stats.vercel.app/api?username=menegonlucas&theme=algolia&show_icons=true"
+                            alt="GitHub Stats">
+                    </div>
+                    <div class="stats-card">
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=menegonlucas&theme=algolia"
+                            alt="Top Languages">
+                    </div>
+                    <div class="stats-card">
+                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=menegonlucas&theme=algolia"
+                            alt="GitHub Streaks">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <div class="section-container">
+                <h2 class="section-title">Vamos conversar</h2>
+                <p class="section-subtitle">Estou aberto a oportunidades e colaborações. Entre em contato!</p>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div>
+                                <h3>GitHub</h3>
+                                <a href="https://github.com/menegonlucas" target="_blank">github.com/menegonlucas</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder=" ">
+                            <label for="name">Nome</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder=" ">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                            <label for="message">Mensagem</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                Lucas Menegon <span class="highlight">Dev</span>
+            </div>
+            <div class="footer-links">
+                <a href="#home" class="footer-link">Início</a>
+                <a href="#about" class="footer-link">Sobre</a>
+                <a href="#projects" class="footer-link">Projetos</a>
+                <a href="#skills" class="footer-link">Habilidades</a>
+                <a href="#contact" class="footer-link">Contato</a>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/menegonlucas" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
         </div>
-    </section>
-
-    <section id="about" class="section">
-        <h2>Quem sou eu?</h2>
-        <p>Iniciei o curso Técnico em Desenvolvimento de Sistemas em 2024 e, desde o primeiro contato com o
-            Front-end,
-            descobri minha paixão pelo desenvolvimento de sites e seus elementos visuais. Com ajuda de sites,
-            incluindo
-            Inteligências Artificiais, tenho aprimorado minhas habilidades, criando projetos
-            mais bonitos e agradáveis e funcionais.</p>
-    </section>
-
-    <section id="featured-project" class="section">
-        <h2>Destaque</h2>
-        <div class="featured-project-card">
-            <h3>Que tal gerenciar suas leituras? - Projeto final TCC</h3>
-            <p>
-                <span>Palavraria</span> é uma plataforma minimalista para organizar os livros que você já leu e
-                os que deseja ler. Nosso foco é oferecer uma experiência simples, sem distrações, para você
-                acompanhar suas leituras de forma fácil e intuitiva.
-            </p>
-            <p>
-                Diferente de outros sites/apps, valorizamos a <span>praticidade</span>: sem excesso de
-                informações, apenas o essencial para gerenciar sua biblioteca de um jeito rápido e interessante.
-            </p>
-            <p>
-                Cadastre seus livros manualmente e acompanhe seu progresso com status personalizados:
-                <span>lendo, lido, quero ler, abandonado ou
-                    relendo</span>. Atualize a página em que está, e uma barra de progresso será calculada
-                automaticamente.
-            </p>
-            <a href="https://github.com/menegonlucas/projeto_tcc" target="_blank" class="btn">Ver no GitHub</a>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Lucas Menegon. Todos os direitos reservados.</p>
         </div>
-    </section>
-
-    <section id="projects" class="section">
-        <h2>Projetos favoritos</h2>
-        <div class="projects-grid">
-            <a href="https://menegonlucas.github.io/desafio-cards/" class="project-card" target="_blank">
-                <h3>Desafio Cards e Listas</h3>
-                <p>> Neste projeto, fomos desafiados a trabalhar com a exibição em Cards e Listas, bem como ser uma
-                    tela
-                    vísivel em celulares. </p>
-            </a>
-            <a href="https://menegonlucas.github.io/aula4_pfe/" class="project-card" target="_blank">
-                <h3>Web Storage</h3>
-            </a>
-            <a href="https://github.com/menegonlucas/projeto_tcc.git" class="project-card" target="_blank">
-                <h3>... TCC (em andamento)</h3>
-                <p>> Conheça nosso projeto para finalizar o curso com chave de ouro!</p>
-            </a>
-            <a href="https://github.com/menegonlucas/pfe1-lanchonete-delivery-2025.git" class="project-card"
-                target="_blank">
-                <h3>Aula 28/04/2025</h3>
-                <p>> Trabalho desenvolvido como parte da Situação de Aprendizagem -
-                    Front-End, utilizando HTML, CSS e JavaScript. O sistema implementa funcionalidades como
-                    LocalStorage, tabelas dinâmicas e responsividade.</p>
-            </a>
-            <a href="https://github.com/menegonlucas/mobile-figma.28-04.git" class="project-card" target="_blank">
-                <h3>Mobile & FIGMA</h3>
-                <p> > Acesse o repositório para mais informações sobre a atividade.</p>
-            </a>
-        </div>
-    </section>
-
-    <section id="skills" class="section">
-        <h2>Habilidades</h2>
-        <ul class="skills-list">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Node.js</li>
-            <li>Markdown</li>
-            <li>Linguagem C</li>
-        </ul>
-    </section>
-
-    <section id="github-stats" class="section">
-        <h2>Estatísticas do GitHub</h2>
-        <div class="github-stats-grid">
-            <img src="https://github-readme-stats.vercel.app/api?username=menegonlucas&theme=algolia&show_icons=true"
-                alt="GitHub Stats">
-            <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=menegonlucas&theme=algolia"
-                alt="Top Languages">
-            <img src="https://github-readme-streak-stats.herokuapp.com/?user=menegonlucas&theme=algolia"
-                alt="GitHub Streaks">
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Lucas Menegon</p>
     </footer>
+
+    <script src="./web/script.js"></script>
 </body>
-
-<script>
-    document.addEventListener('mousemove', (e) => {
-        if (Math.random() > 0.5) {
-            const star = document.createElement('div');
-            star.classList.add('star');
-
-            const offsetX = (Math.random() - 0.5) * 50;
-            const offsetY = (Math.random() - 0.5) * 50;
-            star.style.top = `${e.clientY + offsetY}px`;
-            star.style.left = `${e.clientX + offsetX}px`;
-
-            const hue = Math.random();
-            star.style.setProperty('--hue', hue);
-
-            document.body.appendChild(star);
-
-            setTimeout(() => {
-                star.remove();
-            }, 1000);
-        }
-    });
-</script>
 
 </html>
