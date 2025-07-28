@@ -1,22 +1,29 @@
 :root {
-    --primary-color: #1B8F42;
-    --primary-dark: #147335;
-    --secondary-color: #BCDFB2;
-    --background-color: #D2E052;
-    --dark-bg: #0A0A0A;
+    --primary-color: #ff0000;
+    /* Vermelho */
+    --primary-dark: #cc0000;
+    /* Vermelho mais escuro */
+    --secondary-color: #990000;
+    /* Vermelho escuro */
+    --background-color: #000000;
+    /* Preto */
+    --dark-bg: #0a0a0a;
     --darker-bg: #050505;
-    --text-color: #f8f8f8;
+    --text-color: #f5f5f5;
     --text-light: #e0e0e0;
-    --text-muted: #a0a0a0;
-    --white: #EFEFFF;
-    --card-bg: rgba(15, 15, 15, 0.8);
-    --card-border: rgba(255, 255, 255, 0.05);
+    --text-muted: #888888;
+    --white: #ffffff;
+    --card-bg: rgba(30, 0, 0, 0.85);
+    /* Fundo com tom vermelho escuro */
+    --card-border: rgba(255, 0, 0, 0.1);
+    /* Borda sutil vermelha */
 
-    --font-primary: 'Cal Sans', sans-serif;
+    --font-primary: 'Faculty Glyphic';
     --font-secondary: 'Inter', sans-serif;
 
     --border-radius: 12px;
-    --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    --box-shadow: 0 8px 30px rgba(255, 0, 0, 0.1);
+    /* Sombra vermelha sutil */
     --transition: all 0.3s ease;
 }
 
@@ -35,8 +42,8 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     background:
-        linear-gradient(to top, rgba(11, 12, 26, 1) 0%, rgba(11, 12, 26, 0.4) 60%, rgba(0, 0, 0, 0) 100%),
-        url('https://preview.redd.it/6v8msqh7bkm51.png?auto=webp&s=46f699ffaef802071a401889ad24a9893c94e73f') no-repeat center center fixed;
+        linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.4) 60%, rgba(0, 0, 0, 0) 100%),
+        url('https://4kwallpapers.com/images/wallpapers/star-wars-episode-1920x1080-22267.jpg') no-repeat center center fixed;
     background-size: cover;
     background-attachment: fixed;
     overflow-x: hidden;
@@ -187,7 +194,7 @@ nav {
 }
 
 .nav-link:hover {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .mobile-menu-toggle {
@@ -347,12 +354,15 @@ nav {
 }
 
 .project-techs span {
-    background: rgba(27, 143, 66, 0.2);
-    color: var(--secondary-color);
+    background: var(--secondary-color);
+    color: var(--white);
     padding: 0.35rem 0.75rem;
     border-radius: 20px;
     font-size: 0.85rem;
     font-family: var(--font-secondary);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(27, 143, 66, 0.15);
 }
 
 .project-links {
@@ -368,9 +378,14 @@ nav {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    /* Permite até 6 projetos em duas linhas em telas grandes */
+    grid-auto-rows: 1fr;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-card {
@@ -492,7 +507,7 @@ nav {
 }
 
 .skill-item:hover .skill-icon {
-    background: rgba(27, 143, 66, 0.2);
+    background: (--text-muted);
     transform: scale(1.1);
 }
 
@@ -562,7 +577,7 @@ nav {
 .contact-icon {
     width: 50px;
     height: 50px;
-    background: rgba(27, 143, 66, 0.1);
+    background: (--text-muted);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -756,9 +771,9 @@ nav {
 }
 
 .btn-outline:hover {
-    background: rgba(27, 143, 66, 0.1);
+    background: (--text-muted);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(27, 143, 66, 0.1);
+    box-shadow: 0 5px 15px (--text-muted);
 }
 
 /* Animations */
