@@ -11,7 +11,7 @@
     --darker-bg: #050505;
     --text-color: #f5f5f5;
     --text-light: #e0e0e0;
-    --text-muted: #888888;
+    --text-muted: #ffffff;
     --white: #ffffff;
     --card-bg: rgba(30, 0, 0, 0.85);
     /* Fundo com tom vermelho escuro */
@@ -362,7 +362,7 @@ nav {
     font-family: var(--font-secondary);
     font-weight: 600;
     letter-spacing: 0.5px;
-    box-shadow: 0 2px 8px rgba(27, 143, 66, 0.15);
+    box-shadow: 0 2px 8px rgba(143, 27, 27, 0.15);
 }
 
 .project-links {
@@ -402,7 +402,7 @@ nav {
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    border-color: rgba(188, 223, 178, 0.2);
+    border-color: rgba(97, 9, 6, 0.2);
 }
 
 .project-card-header {
@@ -496,7 +496,7 @@ nav {
 .skill-icon {
     width: 60px;
     height: 60px;
-    background: rgba(27, 143, 66, 0.1);
+    background: rgba(81, 2, 2, 0.595);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -749,7 +749,7 @@ nav {
 .btn-primary:hover {
     background: var(--primary-dark);
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(27, 143, 66, 0.3);
+    box-shadow: 0 5px 15px rgba(156, 145, 144, 0.3);
 }
 
 .btn-secondary {
