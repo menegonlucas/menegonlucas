@@ -1,18 +1,5 @@
 <h1 align="center">Lucas Menegon</h1>
 
-<p align="center">
-  <a href="https://instagram.com/menegonlucas_">
-    <img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
-  </a>
-</p>
-
----
-
-## 💼 Sobre Mim
-
-Desenvolvedor apaixonado por tecnologia e inovação, com experiência em programação, design e infraestrutura em nuvem. Sempre buscando aprender, criar e contribuir com projetos impactantes.
-
----
 
 ## 💻 Tech Stack
 
